@@ -52,7 +52,7 @@ Insert Entity to the database
 param @IEntity - interface for the objects in the database
  */
     public void Insert (IEntity entity){
-            String sql = "insert into "+ entity.GetTableName()+" ("+entity.getFieldsForDB()+")"+" VALUES"+"("+entity.getValuesForDB()+")";
+            String sql = "insert into "+entity.GetTableName()+" ("+entity.getFieldsForDB()+")"+" VALUES"+"("+entity.getValuesForDB()+")";
 
             try (
                  Connection conn = this.connect();
