@@ -1,13 +1,20 @@
 import Entities.User;
 import Model.Database;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestDB {
     public static void main(String[] args) {
         Database database = new Database();
         database.connect();
 
-        User u = new User("dana","police","0","active","0","dana@police.co.il","danadana");
-        database.Insert(u);
+
+
+        database.delete(new User("ido"));
+        int i =5;
+
+//        database.update(u);
     }
 
 

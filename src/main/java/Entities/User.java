@@ -29,9 +29,9 @@ public class User extends AEntity {
 
     }
     public User(){}
-    public User(String username){
+    public User(String name){
         super();
-        this.name=new SimpleStringProperty(username);
+        this.name=new SimpleStringProperty(name);
     }
 
     public User(ArrayList<String> LoginArray){
